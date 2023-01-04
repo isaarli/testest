@@ -36,7 +36,7 @@ const dataAlt = [
         category:'Футболки'
     },
     {
-        name:  'pro',
+        name:  'pro burger',
         img: 'https://cdn.create.vista.com/api/media/small/350738446/stock-photo-baby-clothes-accessories-color-background',
         price:1000,
         category:'Футболки'
