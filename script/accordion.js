@@ -32,7 +32,7 @@ const accordionRender = () =>{
         wrap.className='accordion__wrap'
         header.className='accordion__name'
         img.className='plus'
-        img.src='../images/plus.png'
+        img.src='../images/close.png'
         contentWrap.className='accordion__content'
 
         name.textContent=el.title
