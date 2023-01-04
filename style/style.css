@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+/* cammon */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    font-size: 15px; 
+    width: 130px;
+    height: 40px;
+    background:  #a044ff;
+    color: white;
+    transition: all 0.7s 0s ease;
+}
+
+button:hover {
+    background: linear-gradient(to right, #457fca, #5691c8);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: all 0.7s 0s ease;
+}
+
+input {
+    border-radius:6px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 7px 10px;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    row-gap: 30px;
+}
+
+.col-4 {
+    width: 33.3333%;
+    padding: 0 15px;
+}
+
+
+
+
+
+
+
+/* cammon */
+
+/* header */
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    backdrop-filter: blur(3px) saturate(98%);
+    -webkit-backdrop-filter: blur(3px) saturate(98%);
+    background-color: rgba(17, 25, 40, 0);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav img {
+    width: 66px;
+    height: 66px;
+}
+
+.nav {
+    display: flex;
+    column-gap: 12px;
+}
+
+.nav li {
+    text-transform: capitalize;
+    font-size: 23px; 
+    font-weight: 500;
+    transition: all 0.7s 0s ease;
+}
+
+.nav li :hover {
+    color: #a044ff;
+    transition: all 0.7s 0s ease;
+}
+
+
+.nav li a {
+    color: white;
+}
+
+.header-fixed {
+    background-color: #252525;
+    opacity:0.9;
+    color: white;
+    transition: 0.5s;
+    padding: 10px 0;
+}
+
+
+/* header */
+
+/* category__filter */
+#category__filter{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/background_category.jpg');
+    color: white;
+}
+
+#category__filter .container {
+    display: flex;
+    align-items: center;
+    height: 100%;  
+}
+
+.category__wrap {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 5px;
+}
+
+.category__wrap button {
+    padding: 15px 0 20px 0 ;
+    width: 130px;
+    height: 50px;
+}
+
+.category__wrap p {
+    font-size: 25px;
+}
+
+.backdrop-burger {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+} 
+
+.show-backdrop {
+    z-index: 4;
+    opacity: 1;
+}
+
+#inputTelegram {
+    margin: 10px 0 0 0 ;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+/* category__filter */
+
+/* slider */
+
+#main {
+    /* padding: 10px 0; */
+    /* z-index: -3; */
+}
+
+#main .container {
+    max-width: 120%;
+}
+
+#main .swiper {
+    height: 100vh;
+}
+
+#main .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.swiper {
+    z-index: -1;
+}
+
+#main .swiper-slide:nth-child(1) {
+    background-image: url('https://cdn.create.vista.com/api/media/medium/333702612/stock-photo-pregnancy-test-baby-clothes-and?token=');
+}
+
+#main .swiper-slide:nth-child(2) {
+    background-image: url('https://images.pexels.com/photos/7055866/pexels-photo-7055866.jpeg');
+}
+
+#main .swiper-slide:nth-child(3) {
+    background-image: url('https://images.pexels.com/photos/7484842/pexels-photo-7484842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+#main .swiper-button-next:after, #main .swiper-button-prev:after {
+    font-size: 50px;
+    color: white;
+}
+
+#main .swiper-button-next {
+    right: 30px;
+}
+
+#main .swiper-button-prev {
+    left: 30px;
+}
+
+#main .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    background: white;
+    /* opacity: 0.9; */
+}
+
+
+
+
+/* slider */
+
+/* footer */
+
+footer {
+    padding: 50px 0;
+    border: 2px solid white;
+    border-style: solid none none none;
+    background-color: #252525;
+    color: white;
+}
+
+footer .row {
+    /* display: flex; */
+    justify-content: space-around;
+}
+
+.footer__svg img {
+    /* color: aqua; */
+    background-color: #457fca;
+}
+
+footer h3 {
+    padding: 0 0 20px 0;
+    text-align: center;
+}
+
+.box-1 img {
+    width: 27px;
+}
+
+.box-1 div {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 0 0 15px 0;
+    column-gap: 10px;
+}
+
+footer .col-4:nth-child(2) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-2 img {
+    width: 44px;
+}
+
+svg {
+    width: 44px;
+    height: 44px;
+    fill: #EF629F;
+    transition: all 0.7s 0s ease;
+}
+
+footer a :hover {
+    width: 55px;
+    height: 55px;
+    fill: #a044ff;
+    transition: all 0.7s 0s ease;
+}
+
+/* footer */
