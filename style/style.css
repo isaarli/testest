@@ -321,4 +321,11 @@ footer a :hover {
     transition: all 0.7s 0s ease;
 }
 
+.box-3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
 /* footer */
