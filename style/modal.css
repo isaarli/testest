@@ -54,7 +54,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 25px 20px;
     height: 10%;
 }
 
@@ -75,4 +75,10 @@
 
 .modalCloseButton{
     cursor: pointer;
+}
+
+.modalContent__telegram {
+    align-items: center;
+    justify-content: center;
+    height: 90%;
 }

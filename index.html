@@ -7,6 +7,7 @@
     <title>Детская одежда</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" /> 
+    <!-- <script src="//code.jivo.ru/widget/oX0CKNcGG4" async></script> -->
     <link rel="stylesheet" href="./style/castom.css">
     <link rel="stylesheet" href="./style/modal.css">
     <link rel="stylesheet" href="./style/categoty.css">
@@ -18,7 +19,6 @@
 
 <body>
     
-
 <div class="backdrop-burger"></div>
 <header>
     <div class="container">
@@ -44,21 +44,30 @@
         <div class="category__wrap">
             <h1>Детская одежда</h1>
             <p>Приобретая одежду у нас, <br>вы становитесь,участником соц.поддержки</p>
-            <button class="cover__button">Войти в кабинет</button>  
-            <form>
-                <input type="text" id="inputTelegram" placeholder="Введите номер">  
+            <button class="cover__button">Войти в кабинет</button>   
                 <button id="telegram">Обратная связь</button>            
-            </form>
         </div>
     </div>
 </section>
 
+<!-- <div class="backdrop__telegram">
+    <div class="modal__telegram">
+        <div class="modalContent__telegram">
+            <input type="text">
+            <button modalApplyButtonOne></button>
+        </div>
+    </div>
+</div> -->
 <div class="backdrop">
     <div class="modal">
         <div class="modalHeader">
-            <h2>Вход</h2>
+            <h2 class="enter">Вход</h2>
             <p class="modalCloseButton">X</p>
         </div>
+        <form class="modalContent__telegram">
+            <input type="text" placeholder="Введите номер">
+            <button id="modalApplyButtonTwo">Отправить</button>
+        </form>
         <form class="modalContent">     
             <p>Login</p>   
             <input type="email" id="inputMessage" placeholder="Введите Email">
@@ -174,10 +183,10 @@
             </div>
             <div class="col-4">
                 <h3>РАССЫЛКА</h3>
-                <div class="box__footer box-3">
-                    <input type="text">
-                    <button class="coverFooter__button">Отправить</button>
-                </div>  
+                <form class="box__footer box-3">
+                    <input type="email" class="coverFooter__button" placeholder="Введите Email">
+                    <button>Отправить</button>
+                </form>  
             </div>
         </div>
     </div>

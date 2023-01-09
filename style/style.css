@@ -182,7 +182,7 @@ header {
 } 
 
 .show-backdrop {
-    z-index: 4;
+    z-index: 1;
     opacity: 1;
 }
 
